@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fetch Data from API</title>
+        <style>
+            input{
+                width: 300px;
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            textarea{
+                width: 300px;
+                height:350px;
+                padding:10px;
+                border-radius: 10px;
+            }
+            input:focus,textarea:focus{
+                border-color: #101fce;
+                border-style: outset;
+            }
+            button{
+                font-size: 20px;
+                font-weight: 600;
+                color: green;
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                padding: 5px;
+                text-align: center;
+                cursor: pointer;;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <label for="animal">Enter your Favorite Animal</label>
+            <br/>
+            <input type="text" placeholder="Animal name" name="animal" id="animal"/>
+            <br/>
+            <textarea id="fav" placeholder="What you like at this Animal"></textarea>
+            <br/>
+            <button id="generate">GO</button>
+            <div id="animalName"></div>
+            <div id="animalFact"></div>
+            <div id="animalFav"></div>
+        </div>
+
+        <script src="front.js"></script>
+    </body>
+</html>
